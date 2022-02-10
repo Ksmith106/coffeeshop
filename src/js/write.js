@@ -10,8 +10,6 @@ document.forms["coffeeForm"].addEventListener("submit", onAddCoffee);
         e.preventDefault();
         uploadNewcoffeeSelection();
     }
-  
-
    function onImageSelected(e) {
     let file = e.target.files[0];
     console.log(file)
@@ -27,14 +25,14 @@ document.forms["coffeeForm"].addEventListener("submit", onAddCoffee);
         const storagePath = uploadResult.metadata.fullPath;
         const itemRef = await push(dataRef)
 
-        set(itemRef,{
-           key:itemRef.key,
-           sku:`jhvr${itemRef.key}`,
-           urlPath,
-           storagePath,
-           coffee,
-           price,
-           roast
+    set(itemRef,{
+        key:itemRef.key,
+        sku:`jheo${itemRef.key}`,
+        urlPath,
+        storagePath,
+        coffee,
+        price,
+        roast
         })
         
     }
