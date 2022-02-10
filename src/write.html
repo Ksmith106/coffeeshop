@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="msapplication-TileColor" content="#c8112e" />
+    <meta name="theme-color" content="#c8112e" />
+    <meta
+      name="description"
+      content="RISE COFFEE where you can get artisian coffee delivered to your door!"
+    />
+    <title>RISE COFFEE</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/write.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="content-page-app-bar">
+        <div>
+          <img class="icon icon-coffee" src="static/svg/branding/coffee-logo.svg" alt="Rise Coffee logo" width="50" height="50">
+        </div>
+        <ul class="site-links">
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="read.html">Select a Coffee</a></li>
+          <li>  <a href="write.html">Submit a Coffee to sell</a></li>
+          <li>  <a href="update.html">Update Coffee selection</a></li>
+          <li>  <a href="delete.html">Delete a Coffee</a></li>
+        </ul>
+          <button class="button-small">log out</button>
+        </li>
+    </nav>
+    </header>
+  <header class="page-header">
+    <h1>Rise Coffee</h1>
+    <p>Don't forget your morning dose of coffee!</p>
+  </header>
+    <main>
+      <form id="coffeeForm" class="add-new-coffee">
+        <div class="coffee-image form-control">
+          <div class="display">
+            <img src="static/images/coffee.jpg" alt="default coffee">
+          </div>   
+            <label for="coffeeImage">Select image </label>
+            <input type="file" id="coffeeImage"  class="select-file"   accept=".jpg, .png, .jpeg, .webp">
+          </div>
+        <div class="coffee-name form-control">
+          <label for="coffeeName">Name of coffee</label>         
+          <input id="coffeeName" type="text" placeholder="1850">
+          <label for="Price">Price of coffee</label>         
+          <input id="Price" type="text" placeholder="$10">
+          <label for="Roast">Type of Roast</label>         
+          <input id="Roast" type="text" placeholder="Dark">
+        </div>
+        <div class="submit-button form-control">
+        <button type="submit">Add Coffee</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
