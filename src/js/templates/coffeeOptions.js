@@ -1,6 +1,6 @@
 
 
-function Coffee({key, urlPath, name, price, roast}) {
+function coffeeSelection({key, urlPath, name, price, roast}) {
     const template = `
     <aside class="coffee">
     
@@ -46,4 +46,4 @@ function Coffee({key, urlPath, name, price, roast}) {
         window.location.assign('delete.html')
         }
         
-export {Coffee}
+export {coffeeSelection}
