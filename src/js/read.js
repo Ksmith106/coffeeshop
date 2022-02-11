@@ -4,7 +4,7 @@ import {coffeeSelection} from './templates/coffeeOptions'
 
 
 async function pageInit(){
-    const coffeeRef = dataRef(db, 'coffee');
+    const coffeeRef = dataRef(db, 'coffee/');
     const coffeeSnapShot = await get(coffeeRef)
     const data = coffeeSnapShot.val();
 

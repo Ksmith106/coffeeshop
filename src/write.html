@@ -42,15 +42,15 @@
             <img src="static/images/coffee.jpg" alt="default coffee">
           </div>   
             <label for="coffeeImage">Select image </label>
-            <input type="file" id="coffeeImage"  class="select-file"   accept=".jpg, .png, .jpeg, .webp">
+            <input type="file" id="coffeeImage" style="display:none" class="select-file"   accept=".jpg, .png, .jpeg, .webp">
           </div>
         <div class="coffee-name form-control">
           <label for="coffeeName">Name of coffee</label>         
           <input id="coffeeName" type="text" placeholder="1850">
-          <label for="Price">Price of coffee</label>         
-          <input id="Price" type="text" placeholder="$10">
-          <label for="Roast">Type of Roast</label>         
-          <input id="Roast" type="text" placeholder="Dark">
+          <label for="priceTotal">Price of coffee</label>         
+          <input id="priceTotal" type="number" placeholder="$10">
+          <label for="roastType">Type of Roast</label>         
+          <input id="roastType" type="text" placeholder="Dark">
         </div>
         <div class="submit-button form-control">
         <button type="submit">Add Coffee</button>
