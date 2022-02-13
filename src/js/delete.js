@@ -12,7 +12,7 @@ function pageInit(){
   Object.values(data).map(coffee=>{
     const card = CoffeeOptions(coffee)
     document.body.append(card)
-         
+
     })
 
   pageInit()
