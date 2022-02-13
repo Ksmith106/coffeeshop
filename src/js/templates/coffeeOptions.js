@@ -1,30 +1,33 @@
 
 
-function coffeeSelection({key, urlPath, name, price, roast}) {
+function coffeeOptions({key, urlPath, name, price, roast}) {
     const template = `
-    <aside class="coffee">
-    
-    <figure>
-    <img src="${urlPath}" width="160" alt="coffee">
-    <figcaption>
-    <h2>${name}</h2>
-    </figcaption>
-    <figcaption>
-    <h2>${price}</h2>
-    </figcaption>    
-    <figcaption>
-    <h2>${roast}</h2>
-    </figcaption> 
-    </figure>
-    
-    <footer>
-    <button id="edit" data-key="${key}">edit</button>
-    <button id="delete" data-key="${key}">delete</button>
-    </footer>
-    
-    </aside>
+        <aside class="coffee">
+        
+         <figure>
+            <img src="${urlPath}" width="160" alt="coffee beans">
+            <figcaption>
+                <h2>${name}</h2>
+            </figcaption>
+
+            <figcaption>
+                <h2>${price}</h2>
+            </figcaption>    
+            
+            <figcaption>
+                <h2>${roast}</h2>
+            </figcaption>
+             
+        </figure>
+        
+        <footer>
+            <button id="edit" data-key="${key}">edit</button>
+            <button id="delete" data-key="${key}">delete</button>
+        </footer>
+        
+        </aside>
     `
-    const element = document.createRange().createContextualFragment(template).children(0)
+    const element = document.createRange().createContextualFragment(template).children[0]
     addButtonControls(element)
     return element
     }
@@ -46,4 +49,4 @@ function coffeeSelection({key, urlPath, name, price, roast}) {
         window.location.assign('delete.html')
         }
         
-export {coffeeSelection}
+export {coffeeOptions}
