@@ -8,7 +8,7 @@
     "start": "npx parcel src/index.html",
     "build": "npx parcel build src/index.html"
   },
-  "keywords": [],
+  "keywords": ["1850", "Kicking Horse", "Top of The Mornin"],
   "author": "Kenneth Smith",
   "license": "ISC",
   "dependencies": {
